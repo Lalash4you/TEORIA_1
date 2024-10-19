@@ -1,0 +1,117 @@
+/* responsive */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 120px; /* Para respetar el header y nav fijos */
+}
+
+/* Estils per al header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+   
+}
+
+/* Estils per a la navbar */
+nav {
+    position: fixed;
+    top: 80px; /* Justo debajo del header */
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+  
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+  }
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Estils per al contenidor principal */
+.container1 {
+    max-width: 1200px;
+    margin: 60 auto;
+    padding: 20px;
+}
+
+/* Estils per a les files i columnes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.col {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+
+/* Estils per a títols i paràgrafs */
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    color: #666;
+}
+
+footer {
+    position: fixed; /* Fija el footer en la parte inferior */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Hace que el footer ocupe todo el ancho */
+    height: 6%;
+    background-color: #f8f9fa; /* Puedes cambiar el color según tu diseño */
+    text-align: center;
+    padding: 1px 0;
+}
+
+
